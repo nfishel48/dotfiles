@@ -20,5 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'easymotion/vim-easymotion'
     " Info Tabline
     Plug 'bling/vim-airline'
-
+    " Code completion
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    
 call plug#end()
