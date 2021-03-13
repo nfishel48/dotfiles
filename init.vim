@@ -20,3 +20,25 @@ set clipboard+=unnamedplus
 set autoindent smartindent
 map <D-z> u
 map <D-c> "*y
+set number
+set noshowmode
+let g:lightline = { 
+            \ 'colorscheme' : 'jellybeans', 
+            \ 'active': {
+            \   'left': [[ 'mode', 'paste'],
+            \       ['gitbranch', 'readonly', 'filename', 'modified']]
+            \ },
+            \ 'component_function': {
+            \       'gitbranch': 'fugitive#head'
+            \ },
+            \ }
+" enable mouse
+set mouse=a
+if has('mouse_sgr')
+    " sgr mouse is better but not every term supports it
+    set ttymouse=sgr
+endif
+
+" set color needs to bee
+" at the end of file to work
+colorscheme iceberg

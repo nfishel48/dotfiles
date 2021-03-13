@@ -19,7 +19,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Easy Motion Text Nav
     Plug 'easymotion/vim-easymotion'
     " Info Tabline
-    Plug 'bling/vim-airline'
+    Plug 'https://github.com/itchyny/lightline.vim.git'
     " Code completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Theme
+    Plug 'https://github.com/cocopon/iceberg.vim.git'
 call plug#end()
