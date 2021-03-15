@@ -1,3 +1,5 @@
+# Requirements
+neovim, ack
 # Setup 
 Follow the follwing steps to quickly set up neovim with my settings
 # 1.
