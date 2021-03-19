@@ -48,4 +48,4 @@ let g:ctrlp_show_hidden = 1
 
 " set color needs to bee
 " at the end of file to work
-colorscheme iceberg
+colorscheme gruvbox

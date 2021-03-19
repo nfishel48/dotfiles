@@ -23,7 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Code completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Theme
-    Plug 'https://github.com/cocopon/iceberg.vim.git'
+    Plug 'morhetz/gruvbox'
     " Find and replace
     Plug 'dyng/ctrlsf.vim'
     Plug 'ctrlpvim/ctrlp.vim'
