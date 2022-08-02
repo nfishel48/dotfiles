@@ -22,6 +22,7 @@ Plug 'romgrk/barbar.nvim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 "Config Section
@@ -82,6 +83,18 @@ let g:ctrlp_show_hidden = 1
 nmap     <C-F>f <Plug>CtrlSFPrompt
 nmap     <C-F>n <Plug>CtrlSFCwordPath
 nmap     <C-F>p <Plug>CtrlSFPwordPath
+
+" Easy motion 
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 lua << EOF
 require'lspconfig'.pyright.setup{}
@@ -179,5 +192,7 @@ map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
+
 EOF
+
 
