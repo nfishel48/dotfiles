@@ -1,6 +1,7 @@
 call plug#begin("~/.vim/plugged")
   " Plugin Section
-Plug 'haishanh/night-owl.vim'
+  "Plug 'haishanh/night-owl.vim'
+Plug 'Mofiqul/dracula.nvim'
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -31,7 +32,7 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme night-owl
+colorscheme dracula
 " Toggle
 nnoremap <silent> <C-b> :CHADopen<CR>
 " open new split panes to right and below
@@ -99,7 +100,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 lua << EOF
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.gopls.setup{
-cmd = {'/Users/fisheln/go/bin/gopls'},
+cmd = {'/usr/bin/gopls'},
 -- for postfix snippets and analyzers
 capabilities = capabilities,
    settings = {
@@ -194,5 +195,4 @@ map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
 -- :BarbarDisable - very bad command, should never be used
 
 EOF
-
 
