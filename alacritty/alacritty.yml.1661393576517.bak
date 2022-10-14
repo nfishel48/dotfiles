@@ -1,70 +1,3 @@
-<<<<<<< HEAD
-shell:
-  program: /usr/local/bin/fish
-  args:
-    - -l
-    - -c
-    - "tmux attach || tmux"
-items:
-  - colors:
-      name: 3024 (dark)
-      author: Chris Kempson
-      primary:
-        background: "#090300"
-        foreground: "#a5a2a2"
-      cursor:
-        text: "#090300"
-        cursor: "#a5a2a2"
-      normal:
-        black: "#090300"
-        red: "#db2d20"
-        green: "#01a252"
-        yellow: "#fded02"
-        blue: "#01a0e4"
-        magenta: "#a16a94"
-        cyan: "#b5e4f4"
-        white: "#a5a2a2"
-      bright:
-        black: "#5c5855"
-        red: "#db2d20"
-        green: "#01a252"
-        yellow: "#fded02"
-        blue: "#01a0e4"
-        magenta: "#a16a94"
-        cyan: "#b5e4f4"
-        white: "#f7f7f7"
-  - theme: 3024.dark
-colors:
-  # Default colors
-  primary:
-    # hard contrast: background = '#1d2021'
-    background: '#282828'
-    # soft contrast: background = '#32302f'
-    foreground: '#ebdbb2'
-
-  # Normal colors
-  normal:
-    black: '#282828'
-    red: '#cc241d'
-    green: '#98971a'
-    yellow: '#d79921'
-    blue: '#458588'
-    magenta: '#b16286'
-    cyan: '#689d6a'
-    white: '#a89984'
-
-  # Bright colors
-  bright:
-    black: '#928374'
-    red: '#fb4934'
-    green: '#b8bb26'
-    yellow: '#fabd2f'
-    blue: '#83a598'
-    magenta: '#d3869b'
-    cyan: '#8ec07c'
-    white: '#ebdbb2'
-theme: Gruvbox-Dark
-=======
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Any items in the `env` entry below will be added as
@@ -149,7 +82,6 @@ env:
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
   #multiplier: 3
->>>>>>> 95ffe469d7fb964f2071f2e76341673c03e9ec55
 
 # Font configuration
 font:
@@ -161,67 +93,80 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: "monospace"
+
     # The `style` can be specified to pick a specific face.
     style: Regular
-
-  # Bold font face
-  bold:
-    #family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    # Bold font face
+    #bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    #family: monospace
     # The `style` can be specified to pick a specific face.
-    style: Bold
-
-  # Italic font face
-  italic:
+    #style: Bold
+    # Italic font face
+    #italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    #family: monospace
     # The `style` can be specified to pick a specific face.
-    style: Italic
-
-  # Bold italic font face
-  bold_italic:
+    #style: Italic
+    # Bold italic font face
+    #bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    #family: monospace
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    #style: Bold Italic
 
   # Point size
-  size: 16.0
+  size: 11.0
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  #offset:
+  #  x: 0
+  #  y: 0
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+
+# If `true`, bold text is drawn using the bright color variants.
+#draw_bold_text_with_bright_colors: false
+# Colors (Tomorrow Night Bright)
+colors:
+  # Default colors
+  primary:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+
+  # Normal colors
+  normal:
+    black: '#000000'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#caa9fa'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#bfbfbf'
+
+  # Bright colors
+  bright:
+    black: '#575b70'
+    red: '#ff6e67'
+    green: '#5af78e'
+    yellow: '#f4f99d'
+    blue: '#caa9fa'
+    magenta: '#ff92d0'
+    cyan: '#9aedfe'
+    white: '#e6e6e6'
+theme: Dracula

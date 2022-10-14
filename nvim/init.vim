@@ -32,8 +32,6 @@ call plug#end()
 if (has("termguicolors"))
  set termguicolors
 endif
-set wrap
-set tw=80
 
 syntax enable
 colorscheme gruvbox
@@ -106,7 +104,10 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 lua << EOF
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.gopls.setup{
+-- For macos
 cmd = {'/Users/fisheln/go/bin/gopls'},
+-- for linux
+-- cmd = {'/usr/bin/gopls'},
 -- for postfix snippets and analyzers
 capabilities = capabilities,
    settings = {
