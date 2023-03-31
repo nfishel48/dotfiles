@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>.", vim.cmd.Ex)
+
+--Open terminal in nvim
+vim.keymap.set("n", "<leader>ot", vim.cmd.terminal)
 
 -- Move blocks of highlighted text
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -26,3 +29,11 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+
+-- lsp zero keybindings
+-- K dispaly info on hover
+-- gd go to defintion
+-- gi list all implementaions
+-- gr go to refrences
+

@@ -6,7 +6,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
- 
 
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
@@ -14,7 +13,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use { "ellisonleao/gruvbox.nvim" }
+  -- use { "ellisonleao/gruvbox.nvim" }
+  use 'folke/tokyonight.nvim'
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('ThePrimeagen/harpoon')
   use('ms-jpq/chadtree', {run = 'python3 -m chadtree deps'})
@@ -42,7 +42,11 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use {'vim-airline/vim-airline'}
-  use {'vim-airline/vim-airline-themes'}
-  
+  use {'fatih/vim-go'}
+
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+
 end)
