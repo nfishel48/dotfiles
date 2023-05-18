@@ -1,10 +1,11 @@
-<<<<<<< HEAD
 shell:
   program: /usr/local/bin/fish
   args:
     - -l
     - -c
     - "tmux attach || tmux"
+window:
+  opacity: 0.7
 items:
   - colors:
       name: 3024 (dark)
@@ -37,119 +38,31 @@ items:
 colors:
   # Default colors
   primary:
-    # hard contrast: background = '#1d2021'
-    background: '#282828'
-    # soft contrast: background = '#32302f'
-    foreground: '#ebdbb2'
+    background: '#282a36'
+    foreground: '#f8f8f2'
 
   # Normal colors
   normal:
-    black: '#282828'
-    red: '#cc241d'
-    green: '#98971a'
-    yellow: '#d79921'
-    blue: '#458588'
-    magenta: '#b16286'
-    cyan: '#689d6a'
-    white: '#a89984'
+    black: '#000000'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#caa9fa'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#bfbfbf'
 
   # Bright colors
   bright:
-    black: '#928374'
-    red: '#fb4934'
-    green: '#b8bb26'
-    yellow: '#fabd2f'
-    blue: '#83a598'
-    magenta: '#d3869b'
-    cyan: '#8ec07c'
-    white: '#ebdbb2'
-theme: Gruvbox-Dark
-=======
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
-# set by alacritty itself.
-env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
-  LANG: "en_US.UTF-8"
-  LC_CTYPE: en_US.UTF-8
-  #window:
-  # Window background opacity
-  #
-  # Specified in floating number from `0.0` to `1.0`.
-  # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
-  # Window dimensions (changes require restart)
-  #
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
-  # Window position (changes require restart)
-  #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
-  # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
-  # Window decorations
-  #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: full
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
-  #startup_mode: Windowed
-  # Window title
-  #title: Alacritty
-  # Window class (Linux/BSD only):
-  #class:
-  # Application instance name
-  #instance: Alacritty
-  # General application class
-  #general: Alacritty
-  # GTK theme variant (Linux/BSD only)
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-  # Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
-  #scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  #history: 10000
-  # Number of lines the viewport will move for every line scrolled when
-  # scrollback is enabled (history > 0).
-  #multiplier: 3
->>>>>>> 95ffe469d7fb964f2071f2e76341673c03e9ec55
+    black: '#575b70'
+    red: '#ff6e67'
+    green: '#5af78e'
+    yellow: '#f4f99d'
+    blue: '#caa9fa'
+    magenta: '#ff92d0'
+    cyan: '#9aedfe'
+    white: '#e6e6e6'
+theme: Dracula
 
 # Font configuration
 font:
@@ -164,7 +77,9 @@ font:
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
+    #family: "FantasqueSansMono Nerd Font"
+    family: "SauceCodePro Nerd Font"
+    #family: "Hack Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -175,10 +90,16 @@ font:
 
   # Bold font face
   bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
+    family: "SauceCodePro Nerd Font"
+    #family: "FantasqueSansMono Nerd Font"
+    #family: "Hack Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -195,8 +116,10 @@ font:
     # value specified for the normal font.
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
+    # family: RobotoMono Nerd Font  
+    family: "SauceCodePro Nerd Font"
+    #family: "FantasqueSansMono Nerd Font"
+    #family: "Hack Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
@@ -214,7 +137,8 @@ font:
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: "Hack Nerd Font"
+    family: "SauceCodePro Nerd Font"
+    #family: "FantasqueSansMono Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
@@ -224,4 +148,4 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 16.0
+  size: 14.0

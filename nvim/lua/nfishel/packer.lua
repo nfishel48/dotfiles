@@ -14,7 +14,8 @@ return require('packer').startup(function(use)
   }
 
   -- use { "ellisonleao/gruvbox.nvim" }
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
+  use 'Mofiqul/dracula.nvim'
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('ThePrimeagen/harpoon')
   use('ms-jpq/chadtree', {run = 'python3 -m chadtree deps'})
@@ -48,5 +49,7 @@ use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
+
+use "numToStr/FTerm.nvim"
 
 end)

@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>.", vim.cmd.Ex)
 
 --Open terminal in nvim
-vim.keymap.set("n", "<leader>ot", vim.cmd.terminal)
+--vim.keymap.set("n", "<leader>ot", vim.api.nvim_create_user_command('FTermToggle', require(FTerm).toggle, {bang = true}))
 
 -- Move blocks of highlighted text
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -16,9 +16,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- Allow copy to system clipboard
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 
 -- Cut to system keyboard
 vim.keymap.set("n", "<leader>d", "\"_d")
