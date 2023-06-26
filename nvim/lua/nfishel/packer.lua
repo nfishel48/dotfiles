@@ -43,13 +43,30 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use {'fatih/vim-go'}
-
+use {'fatih/vim-go'}
 use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
-
 use "numToStr/FTerm.nvim"
+use 'Olical/conjure'
+use 'tpope/vim-dispatch'
+use 'clojure-vim/vim-jack-in'
+use 'radenling/vim-dispatch-neovim'
+use 'guns/vim-sexp'
+use 'tpope/vim-sexp-mappings-for-regular-people'
 
+use {
+  'phaazon/hop.nvim',
+  branch = 'v2', -- optional but strongly recommended
+  config = function()
+    -- you can configure Hop the way you like here; see :h hop-config
+    require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+  end
+}
+
+use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
 end)
