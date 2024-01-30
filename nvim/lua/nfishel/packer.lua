@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.x',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
@@ -16,9 +16,9 @@ return require('packer').startup(function(use)
   -- use { "ellisonleao/gruvbox.nvim" }
   -- use 'folke/tokyonight.nvim'
   use 'Mofiqul/dracula.nvim'
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('nvim-treesitter/nvim-treesitter',
+      {run = ':TSUpdate'})
   use('ThePrimeagen/harpoon')
-  use('ms-jpq/chadtree', {run = 'python3 -m chadtree deps'})
   use('mbbill/undotree')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -49,7 +49,7 @@ use {
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
 use "numToStr/FTerm.nvim"
-use 'Olical/conjure'
+--use 'Olical/conjure'
 use 'tpope/vim-dispatch'
 use 'clojure-vim/vim-jack-in'
 use 'radenling/vim-dispatch-neovim'
