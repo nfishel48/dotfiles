@@ -78,8 +78,9 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     #family: "FantasqueSansMono Nerd Font"
-    family: "SauceCodePro Nerd Font"
-    #family: "Hack Nerd Font"
+    #family: "SauceCodePro Nerd Font"
+    family: "Hack Nerd Font"
+    #family: "JetBrainsMono Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -97,9 +98,10 @@ font:
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: "SauceCodePro Nerd Font"
+    #family: "SauceCodePro Nerd Font"
     #family: "FantasqueSansMono Nerd Font"
-    #family: "Hack Nerd Font"
+    family: "Hack Nerd Font"
+      #family: "JetBrainsMono Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -117,9 +119,10 @@ font:
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font  
-    family: "SauceCodePro Nerd Font"
+    #family: "SauceCodePro Nerd Font"
     #family: "FantasqueSansMono Nerd Font"
-    #family: "Hack Nerd Font"
+    #family: "JetBrainsMono Nerd Font"
+    family: "Hack Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
@@ -137,7 +140,9 @@ font:
     #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: "SauceCodePro Nerd Font"
+    #family: "SauceCodePro Nerd Font"
+    #family: "JetBrainsMono Nerd Font"
+    family: "Hack Nerd Font"
     #family: "FantasqueSansMono Nerd Font"
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
@@ -149,3 +154,10 @@ font:
 
   # Point size
   size: 14.0
+
+  #Fix for alt key on macOS
+key_bindings:
+  - { key: H,  mods: Alt,           chars: "\x1bh"                       }
+  - { key: V,  mods: Alt,           chars: "\x1bv"                       }
+  - { key: I,  mods: Alt,           chars: "\x1bi"                       }
+
